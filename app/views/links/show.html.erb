@@ -33,10 +33,13 @@
 <div id="comments">
   <%= render :partial => @link.comments %>
 </div>
+
+<% unless nil == current_user %>
 <%= simple_form_for [@link, Comment.new]  do |f| %>
   <div class="field">
     <%= f.text_area :body, class: "form-control" %>
   </div>
   <br>
   <%= f.submit "Add Comment", class: "btn btn-primary" %>
+<% end %>
 <% end %>
