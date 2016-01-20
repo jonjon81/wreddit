@@ -17,6 +17,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-color: #e3e0cf;
+}
+
+
 #logo {
   font-size: 26px;
   font-weight: 700;
@@ -55,4 +60,8 @@
       }
     }
   }
+}
+
+.author {
+  color: black;
 }
